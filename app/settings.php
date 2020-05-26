@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use Monolog\Logger;
+
 $settings = [];
 
 $settings['displayErrorDetails'] = true;
@@ -11,7 +13,7 @@ $settings['public'] = $settings['root'] . '/public';
 $settings['logger'] = [
     'name' => 'spotify-api',
     'file' => $settings['root'] . '/logs/app.log',
-    'level' => Monolog\Logger::DEBUG
+    'level' => Logger::DEBUG
 ];
 
 return $settings;
