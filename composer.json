@@ -1,0 +1,24 @@
+{
+  "name": "Spotify-API",
+  "description": "This is a Fake Spotify API done with Slim v3.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "slim"
+  ],
+  "authors": [
+    {
+      "name": "Jose Gilberto Olivas Ibarra",
+      "email": "olivasgilberto@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/src"
+    }
+  },
+  "require": {
+    "slim/slim": "3.*",
+    "monolog/monolog": "^2.1"
+  }
+}
