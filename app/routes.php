@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 $app->group('/api/v1', function () {
-    $this->get('/bands', App\Application\Actions\Band\ListBandsAction::class)->setName('BandsPage');
-    // $this->get('/albums',)->setName('AlbumsPage');
+    $this->get('/bands', 'ListBandsAction')->setName('BandsPage');
+    // $this->get('/albums', 'ListAlbumsAction')->setName('AlbumsPage');
+    $this->get('/albums', 'ViewBandAlbumsAction')->setName('BandAlbumsPage');
 });
