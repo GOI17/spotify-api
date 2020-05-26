@@ -2,7 +2,7 @@
 
 This is a Fake Spotify API to list some bands albums.
 
-# Start server
+# Run Server
 composer run start 
 php -S localhost:8080 -t public 
 
